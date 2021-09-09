@@ -1,4 +1,5 @@
-// const argumentValue = ['contraband', 'pee'];
+const argumentValue = ['contraband', 'pee'];
+
 
 function scan (cargoItemsArray){
 
@@ -15,4 +16,4 @@ function scan (cargoItemsArray){
 
 }
 
-// console.log(scan(argumentValue));
+console.log(scan(argumentValue));
