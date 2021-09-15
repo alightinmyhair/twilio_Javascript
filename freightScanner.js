@@ -17,3 +17,5 @@ function scan (cargoItemsArray){
 }
 
 console.log(scan(argumentValue));
+// console.log(argumentValue);
+// console.log("Hi");
