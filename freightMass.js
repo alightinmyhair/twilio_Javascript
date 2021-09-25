@@ -1,13 +1,14 @@
 //Create a function that accepts an array of strings
-//should return a number - result of findings the length of all strings in the input array
+//should return a number
+//result of findings the length of all strings in the input array
 
 function calculateMass(freightItems) {
 
     let totalMass = 0;
 
-    const reducer = (firstString,currentString) => firstString + currentString;
-
-    freightItems.reduce(reducer, totalMass);
+    totalMass = freightItems.reduce((accumulatorValue, currentValue) => {
+        return accumulatorValue + currentValue.length;
+    }, totalMass);
 
     return totalMass;
 
@@ -16,3 +17,5 @@ function calculateMass(freightItems) {
 const cargo = ['cat', 'dog', 'dogs'];
 
 const mass = calculateMass(cargo);
+
+console.log(mass);
