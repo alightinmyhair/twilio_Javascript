@@ -1,3 +1,5 @@
+//Creating an object and instantiating it
+
 function construct(name) {
 
     let person = {
